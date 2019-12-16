@@ -381,10 +381,10 @@ class TopOneHundredMovies::Movie
 	
 	def add_to_my_watchlist
 	 if self.class.my_watchlist.find {|watchlisted_movie| watchlisted_movie.imdb_ranking == self.imdb_ranking} != nil
-	   puts "Already added to my watchlist. No duplicates allowed."
+	   puts "Already added to your watchlist. No duplicates allowed."
 	   self
 	 else
-	   puts "Added to my watchlist successfully."
+	   puts "Added to your watchlist successfully."
 	   self.class.my_watchlist << self
 	   self
 	 end
