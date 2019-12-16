@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["'dmaster18@gmail.com'"]
 
   spec.summary       = %q{TopOneHundredMovies is a program that allows users to see IMDb's Top 100 Movies of All Time and to obtain details about movies they'd like to know more about.}
-  spec.description   = %q{TopOneHundredMovies is a program that allows users to see IMDb's Top 100 Movies of All Time and to obtain details about movies they'd like to know more about. Users can find out basic information about one of these highly regarded movies such as the movie's title, director, year of release, rating, duration, and genres. If the user chooses, he or she can learn even more intricate details about the film such as its tagline, plot, famous quotes, trivia, and full cast.}
-  spec.homepage      = "https://github.com/dmaster18/movie.rb"
+  spec.description   = %q{TopOneHundredMovies is a program that allows users to see IMDb's Top 100 Movies of All Time and to obtain details about any of the top 100 films, including its title, director, year of release, rating, duration, and genre. Furthermore, if they choose to do so, user can learn even more intricate details about a selected film, such as its tagline, plot, famous quotes, trivia, and cast. Finally, the gem enables users to save films into a personal playlist to remind them to watch the film in the future.}
+  spec.homepage      = "https://github.com/dmaster18/top_one_hundred_movies"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
