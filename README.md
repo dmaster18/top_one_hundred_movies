@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/top_one_hundred_movies`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TopOneHundredMovies is a program that allows users to see IMDb's Top 100 Movies of All Time and to obtain details about these movies. Users can find out basic information about one of these highly regarded movies such as the movie's title, director, year of release, rating, duration, and genres. Furthermore, if the users choose to do so, they can learn even more intricate details about a selected film, such as its tagline, plot, famous quotes, trivia, and full cast. Finally, the gem enables users to save films into a personal playlist to remind them to watch the film in the future.
+TopOneHundredMovies is a program that allows users to see IMDb's Top 100 Movies of All Time and to obtain details about any of the top 100 films, including its title, director, year of release, rating, duration, and genres. Furthermore, if they choose to do so, user can learn even more intricate details about a selected film, such as its tagline, plot, famous quotes, trivia, and full cast. Finally, the gem enables users to save films into a personal playlist to remind them to watch the film in the future.
 
 ## Installation
 
