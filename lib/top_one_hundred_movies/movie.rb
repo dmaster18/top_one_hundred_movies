@@ -122,7 +122,18 @@ class TopOneHundredMovies::Movie
 	def print_plot
 	  puts "\nPlot: #{plot}"
 	end
-
+	
+	def cast
+	  actors = []
+	  cast_array = movie_page.css("table.cast_list td.primary_photo + td a")
+	  cast_array.collect{|actor| actors << "\n" + actor.text.strip}
+	  actors.join(' ')
+	end
+	
+	def print_cast
+	  puts "\nThe movie's cast consists of: #{cast}"
+	end
+	
 	def trivia
 	  trivia = []
 	  trivia_array = trivia_page.css("div.sodatext")
@@ -346,17 +357,6 @@ class TopOneHundredMovies::Movie
 		end
 	end
 	
-	
-	def cast
-	  actors = []
-	  cast_array = movie_page.css("table.cast_list td.primary_photo + td a")
-	  cast_array.collect{|actor| actors << "\n" + actor.text.strip}
-	  actors.join(' ')
-	end
-	
-	def print_cast
-	  puts "\nThe movie's cast consists of: #{cast}"
-	end
 	
 #Methods that show or save movies to the @@viewed class variable
   	

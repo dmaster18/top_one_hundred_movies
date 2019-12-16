@@ -55,7 +55,7 @@ class TopOneHundredMovies::CLI
 	  if user_input == 'y'
 		TopOneHundredMovies::Movie.print_my_watchlist
 	  end
-	  puts "Thank you for using viewing IMDb's Top 100 Movie List!"
+	  puts "Thank you for viewing IMDb's Top 100 Movie List!"
 	end
   
 #basic_generate_all is a CLI instance method that automatically initializes and prints all top 100 movies from IMDb. This method takes several minutes to finish due to the large number of movies that need to be initialized.
