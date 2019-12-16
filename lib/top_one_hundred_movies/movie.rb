@@ -8,7 +8,7 @@ class TopOneHundredMovies::Movie
 #Attr Reader Variables
 	attr_reader :imdb_ranking, :index, :title, :director, :year, :rating, :duration, :genres #Reader methods that scrape basic details from IMDb Index Page
 	
-	attr_reader :actors, :characters, :cast, :tagline, :plot, :trivia, :quotes #Reader methods that scrape in-depth details from movie's own IMDb page
+	attr_reader :cast, :tagline, :plot, :trivia, :quotes #Reader methods that scrape in-depth details from movie's own IMDb page
 
 #Initialization method
 	def initialize (imdb_ranking = nil) #initializes movie with basic details from IMDb Index Page
@@ -347,32 +347,15 @@ class TopOneHundredMovies::Movie
 	end
 	
 	
-	def actors
+	def cast
 	  actors = []
 	  cast_array = movie_page.css("table.cast_list td.primary_photo + td a")
 	  cast_array.collect{|actor| actors << "\n" + actor.text.strip}
 	  actors.join(' ')
 	end
 	
-	def characters
-	  characters = []
-	  movie_page.css("table.cast_list .character a").collect{|character| characters << character.text.strip}
-	  characters
-	end
-	
-	def cast
-	  cast_array = []
-	  i = 0 
-	  while i < actors.count
-	    actor_role = actors[i].to_s + " as " + characters[i].to_s
-	    cast_array << actor_role
-	    i+=1
-	  end
-	  cast_array
-	end
-	
 	def print_cast
-	  puts "\nThe movie's cast consists of: #{actors}"
+	  puts "\nThe movie's cast consists of: #{cast}"
 	end
 	
 #Methods that show or save movies to the @@viewed class variable
