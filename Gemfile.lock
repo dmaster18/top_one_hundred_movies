@@ -28,10 +28,12 @@ GEM
     loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mini_portile2 (2.4.0)
     minitest (5.13.0)
-    nokogiri (1.10.7-x64-mingw32)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.5-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
+      racc (~> 1.4)
+    racc (1.5.2)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -58,11 +60,12 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   actionview (~> 6.0.1)
   bundler (~> 2.0)
-  nokogiri (~> 1.10.7)
+  nokogiri (~> 1.11.5)
   rake (~> 10.0)
   rspec (~> 3.0)
   top_one_hundred_movies!
