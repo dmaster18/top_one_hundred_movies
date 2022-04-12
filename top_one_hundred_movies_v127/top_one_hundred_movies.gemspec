@@ -36,6 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "nokogiri", "~> 1.10.8"
+  spec.add_development_dependency "nokogiri", "~> 1.13.4"
   spec.add_development_dependency "actionview", "~> 6.0.2.2"
 end
