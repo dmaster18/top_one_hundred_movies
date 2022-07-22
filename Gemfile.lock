@@ -30,6 +30,8 @@ GEM
       nokogiri (>= 1.5.9)
     mini_portile2 (2.4.0)
     minitest (5.13.0)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     rails-dom-testing (2.0.3)
@@ -52,12 +54,13 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.0)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     zeitwerk (2.2.2)
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   actionview (~> 6.0.1)
